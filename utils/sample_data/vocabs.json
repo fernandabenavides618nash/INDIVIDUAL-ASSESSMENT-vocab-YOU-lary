@@ -1,0 +1,75 @@
+{
+    "1": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "CSS",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    },
+    "2": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "HTML",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    },
+    "3": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "javaScript",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    },
+    "4": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "CSS",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    },
+    "5": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "CSS",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    },
+    "6": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "CSS",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    },
+    "7": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "CSS",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    },
+    "8": {
+        "firebaseKey": "1",
+        "title": "CSS",
+        "definition": "Sample definition",
+        "language": "CSS",
+        "isPublic": true,
+        "time": "time", 
+        "uid": "user1"
+    }
+  }
+  
