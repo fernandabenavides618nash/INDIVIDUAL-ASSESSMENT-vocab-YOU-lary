@@ -1,0 +1,27 @@
+{
+    "CSS": {
+        "favorite": true,
+        "definition": "Cascade Styling Sheet",
+        "language": "CSS",
+        "time": "time", 
+        "uid": "",
+        "firebaseKey": "CSS"
+    },
+    "HTML": {
+        "favorite": true,
+        "definition": "Hypertext Markup Language",
+        "language": "HTML",
+        "time": "time", 
+        "uid": "",
+        "firebaseKey": "HTML"
+    },
+    "javaScript": {
+        "favorite": true,
+        "definition": "Java Script",
+        "language": "javaScript",
+        "time": "time", 
+        "uid": "",
+        "firebaseKey": "javaScript"
+    }
+  }
+  
