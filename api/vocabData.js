@@ -1,5 +1,5 @@
 import client from '../utils/client';
-// API CALLS FOR BOOKS
+// API CALLS FOR VOCABS
 
 const endpoint = client.databaseURL;
 
@@ -76,9 +76,9 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
     .then(reject);
 });
 
-// TODO: FILTER PUBLIC VOCABS
-const publicVocab = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="isPublic"&equalTo=true`, {
+// TODO: FILTER FAVORITE VOCABS
+const favoriteVocab = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="favorite"&equalTo=true`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -89,12 +89,10 @@ const publicVocab = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// TODO: STRETCH...SEARCH VOCAB
-
 export {
   getVocabs,
   createVocab,
-  publicVocab,
+  favoriteVocab,
   deleteVocab,
   getSingleVocab,
   updateVocab

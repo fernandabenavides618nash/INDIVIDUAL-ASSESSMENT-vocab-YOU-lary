@@ -4,72 +4,72 @@
         "title": "CSS",
         "definition": "Sample definition",
         "language": "CSS",
-        "isPublic": true,
+        "favorite": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     },
     "2": {
-        "firebaseKey": "1",
+        "firebaseKey": "2",
         "title": "CSS",
         "definition": "Sample definition",
         "language": "HTML",
-        "isPublic": true,
+        "favorite": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     },
     "3": {
-        "firebaseKey": "1",
+        "firebaseKey": "3",
         "title": "CSS",
         "definition": "Sample definition",
         "language": "javaScript",
-        "isPublic": true,
+        "favorite": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     },
     "4": {
-        "firebaseKey": "1",
+        "firebaseKey": "4",
         "title": "CSS",
         "definition": "Sample definition",
         "language": "CSS",
-        "isPublic": true,
+        "favorite": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     },
     "5": {
-        "firebaseKey": "1",
+        "firebaseKey": "5",
         "title": "CSS",
         "definition": "Sample definition",
         "language": "CSS",
-        "isPublic": true,
+        "favoritec": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     },
     "6": {
-        "firebaseKey": "1",
+        "firebaseKey": "6",
         "title": "CSS",
         "definition": "Sample definition",
         "language": "CSS",
-        "isPublic": true,
+        "favorite": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     },
     "7": {
-        "firebaseKey": "1",
+        "firebaseKey": "7",
         "title": "CSS",
         "definition": "Sample definition",
         "language": "CSS",
-        "isPublic": true,
+        "favorite": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     },
     "8": {
-        "firebaseKey": "1",
+        "firebaseKey": "8",
         "title": "CSS",
         "definition": "Sample definition",
         "language": "CSS",
-        "isPublic": true,
+        "favorite": true,
         "time": "time", 
-        "uid": "user1"
+        "uid": ""
     }
   }
   

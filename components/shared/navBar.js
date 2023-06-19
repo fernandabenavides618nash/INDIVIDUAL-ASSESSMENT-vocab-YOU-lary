@@ -1,4 +1,4 @@
-import renderToDOM from '../../../utils/renderToDom';
+import renderToDOM from "../../utils/renderToDOM";
 
 const navBar = () => {
   const domString = `
@@ -22,7 +22,7 @@ const navBar = () => {
               <a class="nav-link" href="#" id="authors">LANGUAGES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="PUBLIC LANGUAGES">Favorite Authors</a>
+              <a class="nav-link" href="#" id="FAVORITE LANGUAGES">Favorite Authors</a>
             </li>
             <li>
             <input

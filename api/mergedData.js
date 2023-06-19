@@ -1,6 +1,6 @@
 // for merged promises
 
-import { deleteSingleLanguage, deleteSingleLanguage, getLanguageVocab, getSingleLanguage } from './languageData';
+import { deleteSingleLanguage, getLanguageVocab, getSingleLanguage } from './languageData';
 import { getSingleVocab, deleteVocab } from './vocabData';
 
 const getVocabDetails = (firebaseKey) => new Promise((resolve, reject) => {

@@ -1,8 +1,8 @@
 import { signOut } from '../utils/auth';
-import { publicVocab, getVocab } from '../api/vocabData';
+import { favoriteVocab, getVocabs } from '../api/vocabData';
 import { showVocab } from '../pages/vocab';
-import { getLanguage, getPublicLanguage} from '../api/languageData';
-import { showAuthors } from '../pages/authors';
+import { getFavLanguage, getLanguage } from '../api/languageData';
+import { showLanguage} from '../pages/language';
 // navigation events
 const navigationEvents = () => {
   // LOGOUT BUTTON
@@ -11,17 +11,17 @@ const navigationEvents = () => {
 
   // TODO: BOOKS ON SALE
   document.querySelector('#sale-books').addEventListener('click', () => {
-    booksOnSale().then((item) => showBooks(item));
+    favoriteVocab().then((item) => showVocab(item));
   });
 
   // Favorite Authors
   document.querySelector('#fav-authors').addEventListener('click', () => {
-    getFavAuthor().then((item) => showAuthors(item));
+    getFavLanguage().then((item) => showLanguage(item));
   });
 
   // TODO: ALL BOOKS
   document.querySelector('#all-books').addEventListener('click', () => {
-    getBooks().then(showBooks);
+    getVocabs().then(showVocab);
   });
 
   // FIXME: STUDENTS Create an event listener for the Authors
@@ -29,7 +29,7 @@ const navigationEvents = () => {
   // 2. Convert the response to an array because that is what the makeAuthors function is expecting
   // 3. If the array is empty because there are no authors, make sure to use the emptyAuthor function
   document.querySelector('#authors').addEventListener('click', () => {
-    getAuthors().then((item) => showAuthors(item));
+    getLanguage().then((item) => showLanguage(item));
     console.warn('CLICKED AUTHORS');
   });
 

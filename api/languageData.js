@@ -21,8 +21,8 @@ const getLanguage = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const getPublicLanguage = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/language.json?orderBy="isPublic"&equalTo=true`, {
+const getFavLanguage = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/language.json?orderBy="favorite"&equalTo=true`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -107,6 +107,5 @@ export {
     deleteSingleLanguage,
     updateLanguage,
     getLanguageVocab,
-    getPublicLanguage
+    getFavLanguage
   };
-  

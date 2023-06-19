@@ -1,4 +1,4 @@
-import clearDOM from '../utils/clearDOM';
+import clearDOM from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDOM';
 
 const emptyLanguage = () => {
@@ -7,9 +7,9 @@ const emptyLanguage = () => {
 };
 
 const showLanguage = (array) => {
-  clearDom();
+  clearDOM();
 
-  const btnString = '<button class="btn btn-success btn-lg mb-4" id="add-author-btn">Add An Author</button>';
+  const btnString = '<button class="btn btn-success btn-lg mb-4" id="add-author-btn">Add Language</button>';
 
   renderToDOM('#add-button', btnString);
 
@@ -18,8 +18,8 @@ const showLanguage = (array) => {
     domString += `
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">${item.first_name} ${item.last_name}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">${item.email}</h6>
+        <h5 class="card-title">${item.language} ${item.definition}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">${item.firebaseKey}</h6>
         <p class="card-text bold">${item.favorite ? '<span class="badge badge-info sale-badge"><i aria-hidden="true"></i> Favorite</span>' : ''}</p>
         <hr>
         <i class="btn btn-success fas fa-eye" id="view-author-btn--${item.firebaseKey}"></i>
