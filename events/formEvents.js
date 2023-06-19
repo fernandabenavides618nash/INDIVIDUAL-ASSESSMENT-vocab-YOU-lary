@@ -11,11 +11,11 @@ const formEvents = () => {
       console.warn('CLICKED SUBMIT VOCAB', e.target.id);
       const payload = {
         title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
-        image: document.querySelector('#image').value,
-        price: document.querySelector('#price').value,
-        author_id: document.querySelector('#author_id').value,
-        sale: document.querySelector('#sale').checked,
+        definition: document.querySelector('#description').value,
+        // image: document.querySelector('#image').value,
+        language: document.querySelector('#language').value,
+        language: document.querySelector('#author_id').value,
+        favorite: document.querySelector('#sale').checked,
       };
 
       createVocab(payload).then(({ name }) => {
@@ -34,12 +34,11 @@ const formEvents = () => {
       console.warn(firebaseKey);
       const payload = {
         title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
-        image: document.querySelector('#image').value,
-        price: document.querySelector('#price').value,
-        author_id: document.querySelector('#author_id').value,
-        sale: document.querySelector('#sale').checked,
-        firebaseKey,
+        definition: document.querySelector('#description').value,
+        // image: document.querySelector('#image').value,
+        language: document.querySelector('#language').value,
+        language: document.querySelector('#author_id').value,
+        favorite: document.querySelector('#sale').checked,
       };
 
       updateVocab(payload).then(() => {
@@ -47,7 +46,7 @@ const formEvents = () => {
       });
     }
 
-    // FIXME: ADD CLICK EVENT FOR SUBMITTING FORM FOR ADDING A LANGUAGE
+    /*// FIXME: ADD CLICK EVENT FOR SUBMITTING FORM FOR ADDING A LANGUAGE
     if (e.target.id.includes('submit-author')) {
       const payload = {
         email: document.querySelector('#email').value,
@@ -77,7 +76,7 @@ const formEvents = () => {
       updateLanguage(payload).then(() => {
         getLanguagee().then(showLanguage);
       });
-    }
+    }*/
   });
 };
 

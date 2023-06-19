@@ -2,7 +2,7 @@ import { deleteVocab, getVocabs, getSingleVocab } from '../api/vocabData';
 import { showVocab } from '../pages/vocab';
 import { getLanguage, getSingleLanguage } from '../api/languageData';
 import { showLanguage } from '../pages/language';
-import addBookForm from '../components/forms/addVocabForm';
+import addVocabForm from '../components/forms/addVocabForm';
 import addLanguageForm from '../components/forms/addLanguageForm';
 import { getVocabDetails, getLanguageDetails, deleteLanguageVocabRelationship } from '../api/mergedData';
 import viewVocab from '../pages/viewVocab';
@@ -35,7 +35,7 @@ const domEvents = () => {
       // console.warn(e.target.id.split('--'));
       const [, firebaseKey] = e.target.id.split('--');
 
-      getSingleVocab(firebaseKey).then((vocabObj) => addBookForm(vocabObj));
+      getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj));
     }
     // TODO: CLICK EVENT FOR VIEW VOCAB DETAILS
     if (e.target.id.includes('view-book-btn')) {
